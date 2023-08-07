@@ -1,0 +1,3 @@
+displayName = Upgraded Research
+author = JPAN
+version = 1.0.0

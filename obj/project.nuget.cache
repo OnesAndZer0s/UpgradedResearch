@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "iR5jDeRGIZ0mfjZyO8nAVmSa34UVWjWAwSDlUzabNsmbvtEop6x9KMvPZ5l0EY4La47xcIqsdYjCiL4ygJFxtg==",
+  "success": true,
+  "projectFilePath": "/home/tayler/.local/share/Terraria/tModLoader/ModSources/UpgradedResearch/UpgradedResearch.csproj",
+  "expectedPackageFiles": [
+    "/home/tayler/.nuget/packages/tmodloader.codeassist/0.1.5/tmodloader.codeassist.0.1.5.nupkg.sha512",
+    "/home/tayler/.nuget/packages/microsoft.netcore.app.ref/6.0.16/microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
+    "/home/tayler/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.16/microsoft.aspnetcore.app.ref.6.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}

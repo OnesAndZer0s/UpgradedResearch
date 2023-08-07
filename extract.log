@@ -1,0 +1,17 @@
+The modder has not chosen to include their source code.
+Files:
+UpgradedResearch.dll
+You can find this mod's .dll files under /home/tayler/.local/share/Terraria/tModLoader/ModSources/ModAssemblies for easy mod collaboration!
+UpgradedResearch.pdb
+build.txt
+icon.png
+workshop.json
+Properties/launchSettings.json
+Buffs/AlphaBuff.png
+Buffs/OmegaBuff.png
+Items/ResearchErasingBook.png
+description.txt
+Items/OmniPotion.png
+Items/ResearchSharingBook.png
+Items/MainSlotFrame.png
+Items/UnresearchedOverlay.png

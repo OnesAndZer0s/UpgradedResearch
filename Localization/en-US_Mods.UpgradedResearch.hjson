@@ -1,0 +1,161 @@
+Buffs: {
+	AlphaBuff: {
+		DisplayName: Alpha (buffs)
+		Description: You have the following number of Buffs active:
+	}
+
+	OmegaBuff: {
+		DisplayName: Omega (debuffs)
+		Description: You have the following number of debuffs active:
+	}
+}
+
+Items: {
+	OmniPotion: {
+		DisplayName: Omni-Potion
+		Tooltip: "One Potion to rule them all.\nDrink this to have the effect of all potions in your favourites or entire research (see config), if enabled."
+	}
+
+	ResearchErasingBook: {
+		DisplayName: Research Erasing Book
+		Tooltip: "A book that will make you forget all that you researched. Right-click it to forget."
+	}
+
+	ResearchSharingBook: {
+		DisplayName: Research Sharing Book
+		Tooltip: "Research this book once to store all your knowledge in it. Then share it with a friend!\nResearching a full book will give you all its knowledge and reset it to a blank book."
+	}
+}
+
+Configs: {
+	Config: {
+		DisplayName: Config
+
+		unresearchedOverlay: {
+			Label: Draw Unresearched Items overlay on World items
+			Tooltip: Any researcheable item you have not researched fully yet that are dropped in the world show up with a magnifying glass over them, to easily identify them.
+		}
+
+		researchRecipes: {
+			Label: Research all craftables at once
+			Tooltip: When you research an item or crafting table, learns all items that can be crafted with it and the available researched items/crafting tables as well.
+		}
+
+		researchGroups: {
+			Label: Research all Items in the same RecipeGroup at once
+			Tooltip: When you research an item, it will automatically research all of the items that belong to the same group at once (Warning: Pearlwood is part of the Any Wood Group)
+		}
+
+		autoShiftResearch: {
+			Label: Research when shift-clicked
+			Tooltip: When you shift-click an item into the Research slot, automatically research it, instead of having to manually click the research button.
+		}
+
+		shiftTrashResearched: {
+			Label: Trash when shift-clicked and already researched
+			Tooltip: When you shift-click an item, it will only go into the Research slot if it's not fully researched, else goes to the trash slot.
+		}
+
+		allowCraftFromResearch: {
+			Label: Craft from Researched stations
+			Tooltip: If true, will allow use of the researched crafting stations as if they were around the player.
+		}
+
+		shareResearchWithTeam: {
+			Label: Share Research With Team members
+			Tooltip: If true, will share whatever you research from that point onwards with your teammates, until you leave the team. Will not share previously researched items.
+		}
+
+		syncResearchWithTeam: {
+			Label: Sync Research With Team members
+			Tooltip: If true, will share whatever you have researched with your teammates, until you leave the team.
+		}
+
+		infiniteAmmo: {
+			Label: Researched Ammo is infinite
+			Tooltip: If you have researched a type of ammo, that ammo is considered infinte, and will not be consumed.
+		}
+
+		infiniteItems: {
+			Label: Researched Consumables are infinite
+			Tooltip: If you have researched a type of consumable item (such as blocks, potions, furniture, etc...), that item and will not be consumed when used.
+		}
+
+		showResearch: {
+			Label: Display Research amount on item tooltip
+			Tooltip: Shows how much research is required for the selected item to be fully researched.
+		}
+
+		showResearched: {
+			Label: Display Researched! tooltip
+			Tooltip: Shows "Researched!" on the item if it was already researched. Make false to ignore it.
+		}
+
+		showTag: {
+			Label: Display ItemTag on item tooltip
+			Tooltip: Shows the mod and item internal name below the item tooltip. Use this if you want to find out how to add an exception to the research value to an item.
+		}
+
+		omniPotion: {
+			Label: Allow OmniPotion
+			Tooltip: If the OmniPotion item should allow you to obtain the buffs from all researched items categorized as "Food and Potions".
+		}
+
+		favouritedOmniPotion: {
+			Label: OmniPotion drinks favourited potions only
+			Tooltip: If the OmniPotion item, when allowed, should drink all "Food and Potions" in the favourite category, or off for drinking all potions reseached except the ones favourited.
+		}
+	}
+
+	SacrificeCountConfig: {
+		DisplayName: Sacrifice Count Config
+
+		allResearchOne: {
+			Label: Set all required research values to 1
+			Tooltip:
+				'''
+				Every item that can exist in the game will have it's research max set to 1.
+				NOTE: this option is kinda one-way. Any item researched before this will also have their researched count set to one, so if you turn off this function later, all researched items will only have one has the research value.
+				'''
+		}
+
+		asItemChecklist: {
+			Label: Use Creative Panel as Item Checklist
+			Tooltip: Disables retrieving items from the Creative panel, and researched items will not disappear. All items will only cost 1, regardless of the option above on or off.
+		}
+
+		itemMultPercent: {
+			Label: Research Requirement Percentage Multiplier
+			Tooltip: Mutliplies all max items needed to research by this value/100. Not applied if either of the two previous features are turned on, but will apply to manually set values and categories.
+		}
+
+		maxStackResearch: {
+			Label: Limit Max Research to Max Stack
+			Tooltip: Regardless of item, one full stack is what you will need to research it. This option overides all manual sets as well
+		}
+
+		autoResearchOne: {
+			Label: When research value is 1, auto-research picked up items
+			Tooltip: When picking up an item, it will check if it only needs 1 item to research. If so, auto-researches the item.
+		}
+
+		sacrifices: {
+			Label: Manual Research Override - Items
+			Tooltip: Place the (internal) Item name of the items you want to set and their max values here. Grouped by mod, so set the mod name first, then the item name as shown in the tag.
+		}
+	}
+
+	TrashConfig: {
+		DisplayName: Trash Config
+
+		autoTrashResearched: {
+			Label: Auto-Trash picked up Researched items
+			Tooltip: Automatically deletes items that are researched when picked up. Pick up priority is Mod Name Based, so they may be caught up by other mods. Researched items with prefixes you have not researched yet will not be destroyed.
+		}
+
+		exceptionList: {
+			Label: Auto-trash Blacklist
+			Tooltip: Place the tags of the items you don't want to trash in this list.
+		}
+	}
+}

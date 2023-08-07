@@ -1,0 +1,39 @@
+Upgraded Research is a mod that aims to make the Research system from Journey mode better to use, with several useful functions ported from my "Research from 1.4" mod.
+
+It adds:
+- Auto-craft research, so as long as you research an item and a crafting station, you will learn all items possible to craft with that crafting station and all ingredients you researched.
+- Knowledge Sharing and Erasing books, so you can learn items from friends in-mass or simply start over with an old character. These are unlocked from the moment you load a world with your character.
+  - Using the Knowledge erasing book is simply pressing right-click on it.
+  - The knowledge Sharing Book, however, must be placed in the Research slot and "Reserached" to be filled with the items you have learned. Then it will become a "PlayerName's Research Sharing book", indicating it is ready to share your knowledge with others. Then, either you or any other player can research that book to learn those items, as well as anything crafted from them and the other items you might have.
+- Infinite Ammo in case you have it researched (Note: ammo only at the time. Bait comming soon and blocks when the config is done).
+- Shift-clicking into the Research box will research an item automatically (even though the animation doesn't play, the sound effects do!)
+- Auto-erase any researched item you pick up that isn't a coin, the knowledge books and items you have a partial stack on your inventory (until that stack is filled).
+
+v0.9
+Added new Config, the Sacrifice Count config, that allows you to enable new gameplay modes for your research, and change the values needed before researching.
+ - Allows setting ALL items to needing only 1 research;
+ - Allows setting all items with 1 research left to be auto-researched when picked up, no sacrificing needed.
+ - Allows using your Creative menu as an Item Checklist, setting all research to be done automatically when you pick up an item, and disabling item duplication from the Creative menu;
+ - Added Sacrifices table that allow you to set a research value for each item individually, or change them as you see fit. For now, no broad category value setting.
+
+v0.8
+Added config option to be able to notice if an item is researcheable yet not researched (item overlay) when in the world
+Re-added the Omni Potion from Research from 1.4
+Added sharing research with team members (when you research something fully, they also learn it) and Syncing your research with team members (always keep both your completed research updated(see below for details))
+Added a way to sync research, favourites and omni-potion effects between clients. This makes it possible to use server-side these informations. Omni-potion only syncs when the player either drinks the potion, cancels the buff or when someone new joins. The research is synced every 2 seconds, to avoid overloading the message system.
+ - As a side effect, effects of the potions or items "equipped" using TooManyAccessories' Forbidden one will show on all clients, including vanities and other visual effects.
+Other misc bug fixes
+v0.6
+Re-added Crafting using researched tiles option;
+Added A Research Group option, that will research all the items that belong to a RecipeGroups that you researched at least one off. NOTE: very unbalanced, will unlock Spooky Wood with any kind of wood!
+Research Erasing Book can now be Researched as well as right-clicked to provide the desired "erase" effect
+v0.5 
+Made items with recipe groups researcheable again. This includes the vanilla groups (any iron, all wood, any sand, etc) and any mod-added one.
+v0.4 - Return of the config
+Added most config options from ResearchFrom14 to this version. Now you can disable crafting-on-research, and auto-trash items!
+Fixed Research sharing book refresh-research functionality
+Also re-added the option to not consume items when they are researched.
+v0.3
+Fix freeze from trying to check if game is in journey mode
+V0.1
+Intital release for TMod1.4 Alpha
